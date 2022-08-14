@@ -1,0 +1,403 @@
+:root {
+    --fw-400: 400;
+    --fw-700: 700;
+    --fs-base: 1rem;
+    --color-white: #FCFAF9;
+    --color-dark: #191826;
+    --color-blue: #66E2DC;
+    --color-orange: #FA7453;
+    --color-brown: #FFB964;
+    --ff: 'IBM Plex Sans', sans-serif;
+}
+
+
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+    margin: 0;
+}
+
+/* Set core body defaults */
+body {
+
+    background: url("../assets/bg-main-mobile.png") no-repeat;
+
+    background-position: 5% -7%;
+    text-align: left;
+    /* layout and typographie */
+    margin: 0 auto;
+    min-height: 100vh;
+
+    width: 100%;
+    font-size: var(--fs);
+    font-weight: var(--fw-400);
+    line-height: 1.625em;
+    font-family: var(--ff);
+    color: var(--color-dark);
+    background-color: var(--light-gray);
+    padding-top: clamp(2.5rem, calc(2.5rem + ((1vw - 0.21875rem) * 7.5862)), 3.875rem);
+}
+
+body > *:not(.container) {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+body > div:first-of-type {
+    padding-bottom: clamp(4rem, calc(4rem + ((1vw - 0.21875rem) * 10.3333)), 5.9375rem);
+}
+
+.title {
+    width: 100%;
+    font-size: clamp(2.5rem, calc(2.5rem + ((1vw - 0.21875rem) * 8)), 4rem);
+    font-weight: var(--fw-700);
+    line-height: 1.2em;
+    letter-spacing: -0.45px;
+    padding-bottom: clamp(1.25rem, calc(1.25rem + ((1vw - 0.21875rem) * 2.8986)), 2.5rem);
+}
+
+.title + p {
+    width: 100%;
+}
+
+.container {
+    margin-top: clamp(10.375rem, calc(10.375rem + ((1vw - 0.21875rem) * 22.4638)), 20.0625rem);
+    position: relative;
+}
+
+.container img {
+    max-width: 100%;
+    display: block;
+} 
+
+.container .phone {
+    position: absolute;
+    bottom: 16.75rem;
+    z-index: 2;
+}
+
+.container section {
+    padding-bottom: 3rem;
+    padding-top: clamp(3rem, calc(3rem + ((1vw - 0.234375rem) * 0.939)), 3.625rem);
+    padding-left: clamp(2.25rem, calc(2.25rem + ((1vw - 0.234375rem) * 1.9718)), 3.5625rem);
+    padding-right: clamp(2.25rem, calc(2.25rem + ((1vw - 0.234375rem) * 1.9718)), 3.5625rem);
+    font-size: 1.125rem;
+    line-height: 1.56em;
+    color: var(--color-white);
+    background-color: var(--color-orange);
+    width: clamp(23.4375rem, calc(23.4375rem + ((1vw - 0.234375rem) * 6.6667)), 27.875rem);
+}
+
+main > *,
+button {
+    border-radius: .75rem;
+}
+
+main div:first-child {
+    background-color: var(--color-dark);
+}
+
+section h2 {
+    font-size: 2rem;
+    line-height: 1.25em;
+    padding-bottom: 0.75rem;
+}
+
+.price,
+button {
+    display: inline-flex;
+    align-items: center;
+}
+
+.price {
+    margin-top: 2.25rem;
+    margin-bottom: 2rem;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.price span:first-child {
+    font-size: 4rem;
+    line-height: 3.25rem;
+}
+
+.price span:first-of-type,
+.email {
+    font-weight: var(--fw-700);
+}
+
+.buttons {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+button {
+    cursor: pointer;
+    width: clamp(18.5rem, calc(18.5rem + ((1vw - 0.234375rem) * 3.4742)), 20.8125rem);
+    height: 3.8125rem;
+    font-weight: var(--fw-700);
+    justify-content: center;
+    gap: .5rem;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    letter-spacing: -0.18px;
+    border-style: none;
+    flex: 0 0 auto;
+}
+
+section button {
+    text-align-last: center;
+}
+
+button:first-of-type {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+}
+
+button:last-child {
+    background-color: var(--color-white);
+    color: var(--color-dark);
+}
+
+body > div:last-of-type {
+    padding-bottom: 2rem;
+}
+
+footer {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.address {
+    padding-bottom: 4rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.social_media {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.25rem;
+    width: 6.25rem;
+}
+
+.social_media svg, .backgroundPattern2 img, .phone img  {
+    display: block;
+    margin: 0 auto;
+}
+
+.phone {
+    width: 100%;
+}
+
+.phone img {
+      width: clamp(13rem, calc(13rem + ((1vw - 0.234375rem) * 9.7653)), 19.5rem);
+      height: clamp(26.875rem, calc(26.875rem + ((1vw - 0.234375rem) * 19.9061)), 40.125rem);
+}
+
+main {
+    position: relative;
+}
+
+.section {
+    position: absolute;
+    bottom: -23.75rem;
+    z-index: 5;
+}
+
+.backgroundPattern2 {
+    height: 37.5rem;
+    overflow: hidden;
+}
+
+.container .phone {
+        position: absolute;
+        top: -6.125rem;
+    }
+
+.container {
+      margin-bottom: 26.25rem;
+
+}
+
+
+
+@media (min-width: 48em) {
+    body {
+        background: url("../assets/bg-main-tablet.png") no-repeat, url("../assets/bg-pattern-1.svg") no-repeat;
+        background-position: 140% -20%, 100% -1.5%;
+        background-size: 110%, 266px 400px;
+    }
+
+    body > * {
+        padding-left: clamp(2.5rem, calc(2.5rem + ((1vw - 0.48125rem) * 18.6567)), 10.3125rem);
+        padding-right: clamp(2.5rem, calc(2.5rem + ((1vw - 0.48125rem) * 18.6567)), 10.3125rem);
+    }
+
+    .backgroundPattern2 {
+        position: relative;
+    }
+    
+    .backgroundPattern2 img{
+        position: absolute;
+                top: -1.875rem;
+          margin-left: clamp(14.3125rem, calc(14.3125rem + ((1vw - 0.48rem) * 15.9226)), 21rem);
+    }
+
+    .title {
+        font-size: clamp(4rem, calc(4rem + ((1vw - 0.40625rem) * 6.1538)), 5.5rem);
+        line-height: 4rem;
+        letter-spacing: -0.73px;
+        width: 100%;
+        max-width: 15ch;
+    }
+
+    .title + p {
+        width: 100%;
+        max-width: 50ch;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .address {
+        padding-bottom: 0;
+        width: 22.875rem;
+    }
+    
+    .container {
+          margin-bottom: 11.4375rem;
+
+    }
+    
+    .container .phone {
+        top: -8.625rem;
+        bottom: 11.375rem;
+    }
+    
+    .container .phone img {
+                margin-left: 4rem;
+    }
+    
+    .section {
+        bottom: -6rem;
+        right: 3.625rem;
+    }
+}
+
+@media (min-width: 65em) {
+    body {
+        background: url("../assets/bg-main-desktop.png") no-repeat, url("../assets/bg-pattern-1.svg") no-repeat;
+
+        background-position: 50% 55%, 100% -3%;
+        background-size: 150%, 312px 468px;
+    }
+
+    body > *:not(.container) {
+        padding-left: clamp(2.5rem, calc(2.5rem + ((1vw - 0.48rem) * 18.6012)), 10.3125rem);
+        padding-right: clamp(2.5rem, calc(2.5rem + ((1vw - 0.48rem) * 18.6012)), 10.3125rem);
+    }
+
+    body > div:first-of-type {
+        padding-bottom: clamp(5.9375rem, calc(5.9375rem + ((1vw - 0.40625rem) * 8.2051)), 7.9375rem);
+
+    }
+
+    .title {
+        width: 80%;
+        max-width: 100%;
+        min-width: 15ch;
+        line-height: 1em;
+        letter-spacing: -1px;
+    }
+
+    .title + p {
+        width: 100%;
+        max-width: 70ch;
+    }
+    
+    .container .phone {
+        top: -16.8125rem;
+        bottom: 14.1875rem;
+    }
+    
+        .section {
+        bottom: -3.6875rem;
+            right: 6.8125rem;
+    }
+    
+    .backgroundPattern2 img{
+                top: -2.5rem;
+        bottom: 0;
+    }
+    
+        .container {
+          margin-bottom: 9.125rem;
+    }
+    
+        .container .phone img {
+                margin-left: 5.5rem;
+    }
+}
+
+@media (hover: hover) {
+
+    /* changes that happen only in devices that support hover. */
+    a:hover {
+        cursor: pointer;
+    }
+
+    button:first-child:hover {
+        background-color: var(--color-blue);
+    }
+
+    button:last-child:hover {
+        background-color: var(--color-brown);
+    }
+
+    svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    svg:hover path {
+        fill: var(--color-orange);
+    }
+}
+
+@media (hover: hover) and (min-width: 65em) {    
+        .container {
+          margin-bottom: 13.75rem;
+
+    }
+    .container .phone {
+        top: -13.3125rem;
+        bottom: 10.6875rem;
+    }
+    
+        .section {
+        bottom: -7.1875rem;
+        right: 5.9375rem;
+    }
+    
+        .container .phone img {
+                margin-left: 6.375rem;
+    }
+}
