@@ -284,7 +284,7 @@ ul {
         flex-wrap: wrap;
     }
     
-footer aside {
+footer .logo-footer {
          flex: 1 1 100%;
     padding-bottom: 2rem;
     }
@@ -372,9 +372,9 @@ footer aside {
                 margin-left: 5.5rem;
     }
     
-    footer .logo-header {
+    footer .logo-footer {
          flex: 0 0 auto;
-        margin-bottom: auto;
+        align-self:flex-start;
     }
 }
 
