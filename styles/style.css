@@ -94,11 +94,11 @@ body > div:first-of-type {
 }
 
 main > *,
-button {
+button, .backgroundPattern2 {
     border-radius: .75rem;
 }
 
-main div:first-child {
+.backgroundPattern2 {
     background-color: var(--color-dark);
 }
 
