@@ -75,7 +75,9 @@ To see how you can add code snippets, see below:
 
 ### Useful resources
 
-- [resource - css tricks](https://css-tricks.com/change-color-of-svg-on-hover/) - This helped me to chang the svg when hover state using the fill propertie
+- [resource - css tricks](https://css-tricks.com/change-color-of-svg-on-hover/) - This helped me to change the svg when hover state using the fill propertie
+- [resource - css tricks](https://css-tricks.com/stacking-order-of-multiple-backgrounds/) - This helped me to order two background images in the same container with one on top of the other
+- [resource - mdn](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address) - use of address tag in html
 
 ## Author
 
