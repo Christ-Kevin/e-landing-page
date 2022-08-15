@@ -372,7 +372,7 @@ footer aside {
                 margin-left: 5.5rem;
     }
     
-    footer aside {
+    footer .logo-header {
          flex: 0 0 auto;
         margin-bottom: auto;
     }
