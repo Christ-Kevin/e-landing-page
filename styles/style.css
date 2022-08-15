@@ -172,7 +172,6 @@ body > div:last-of-type {
 }
 
 footer {
-    padding-top: 2rem;
     display: flex;
     flex-direction: column;
 }
@@ -185,7 +184,7 @@ a {
     text-decoration: none;
 }
 
-.social_media {
+.social_media ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -232,6 +231,11 @@ main {
 
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+}
+
 
 
 @media (min-width: 48em) {
@@ -273,11 +277,21 @@ main {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
+    }
+    
+footer aside {
+         flex: 1 1 100%;
+    padding-bottom: 2rem;
+    }
+    
+    .social_media {
+        flex: 0 0 auto;
     }
 
     .address {
         padding-bottom: 0;
-        width: 22.875rem;
+        flex: 0 0 22.875rem;
     }
     
     .container {
@@ -352,6 +366,11 @@ main {
     
         .container .phone img {
                 margin-left: 5.5rem;
+    }
+    
+    footer aside {
+         flex: 0 0 auto;
+        margin-bottom: auto;
     }
 }
 
