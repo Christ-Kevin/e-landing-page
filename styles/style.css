@@ -184,7 +184,7 @@ a {
     text-decoration: none;
 }
 
-.social_media ul{
+#social_media ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -192,7 +192,7 @@ a {
     width: 6.25rem;
 }
 
-.social_media svg, .backgroundPattern2 img, .phone img  {
+#social_media svg, .backgroundPattern2 img, .phone img  {
     display: block;
     margin: 0 auto;
 }
@@ -285,7 +285,7 @@ footer aside {
     padding-bottom: 2rem;
     }
     
-    .social_media {
+    #social_media {
         flex: 0 0 auto;
     }
 
