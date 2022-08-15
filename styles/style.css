@@ -244,9 +244,9 @@ ul {
 
 @media (min-width: 48em) {
     body {
-        background: url("../assets/bg-main-tablet.png") no-repeat, url("../assets/bg-pattern-1.svg") no-repeat;
-        background-position: 140% -20%, 100% -1.5%;
-        background-size: 110%, 266px 400px;
+        background: url("../assets/bg-pattern-1.svg") no-repeat, url("../assets/bg-main-tablet.png") no-repeat;
+        background-position: 100% -1.5%, 140% -20%;
+        background-size: 266px 400px, 110%;
     }
 
     body > * {
@@ -320,10 +320,10 @@ footer aside {
 
 @media (min-width: 65em) {
     body {
-        background: url("../assets/bg-main-desktop.png") no-repeat, url("../assets/bg-pattern-1.svg") no-repeat;
+        background: url("../assets/bg-pattern-1.svg") no-repeat, url("../assets/bg-main-desktop.png") no-repeat;
 
-        background-position: 50% 55%, 100% -3%;
-        background-size: 150%, 312px 468px;
+        background-position: 100% -3%, 50% 55%;
+        background-size: 312px 468px, 150%;
     }
 
     body > *:not(.container) {
