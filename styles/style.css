@@ -126,9 +126,13 @@ button {
     line-height: 3.25rem;
 }
 
-.price span:first-of-type,
-.email {
+.price span:first-of-type {
     font-weight: var(--fw-700);
+}
+
+address a {
+    font-weight: var(--fw-700);
+    color: var(--color-dark);
 }
 
 .buttons {
